@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srikar's Web Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button id="back-to-top" onclick="scrollToTop()">⬆</button>
+    <div id="progress-bar"></div>
+
+
+    <!-- Navigation -->
+    <header>
+        <div class="opaque-bg animated fadeInDown">
+            <h1 style="color:white">Srikar<span style="color:#FF6363">/</span>Developer</h1>
+            <p><span id="tagline">Web Developer</span></p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="scroll-indicator"></div>
+
+    <!-- Hero Section with Parallax Effect -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to My Web Developer Portfolio</h2>
+            <p>Hi! I'm Srikar, a passionate 12-year-old web developer on a journey to master web technologies. Check out my work, projects, and more!</p>
+            <a href="#projects" class="cta-button">View My Projects</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I’m Srikar, a 14-year-old aspiring web developer with a passion for creating amazing websites. I’ve earned my CCBP Nxt Wave certification and specialize in front-end technologies like HTML, CSS, and JavaScript.</p>
+        <p>Aside from coding, I enjoy photography, playing soccer, and learning new things!</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>HTML</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 90%"></div>
+                   
+                </div>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 85%"></div>
+                    
+
+                </div>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 75%"></div>
+                   
+
+                </div>
+            </div>
+            <div class="skill">
+                <h3>React</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 60%"></div>
+                    
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section with Modals -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-gallery">
+            <div class="project-item" onclick="openModal(this)">
+                
+                <div class="project-info">
+                    <h3>Project 1</h3>
+                    <p>Responsive Website</p>
+                </div>
+            </div>
+            <!-- Modal Structure -->
+<div class="modal" id="project1-modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('project1-modal')">&times;</span>
+        <h2>Project 1 - Responsive Website</h2>
+        <p>Details about the project, technologies used, and other insights.</p>
+        <img src=""C:\Users\91939\Downloads\ICNSAMXGPQ.pdf"" alt="Project Image">
+    </div>
+</div>
+<div class="filter-buttons">
+    <button onclick="filterProjects('all')">All</button>
+    <button onclick="filterProjects('html')">HTML</button>
+    <button onclick="filterProjects('css')">CSS</button>
+    <button onclick="filterProjects('javascript')">JavaScript</button>
+</div>
+<div id="projects" class="projects">
+    <div class="project-item" data-category="html css">
+        <!-- Project Content -->
+    </div>
+    <!-- More project items with respective data-category -->
+</div>
+<script src="path/to/particles.min.js"></script>
+
+<div class="filter-buttons">
+  
+    <button onclick="filterProjects('web')">Web Development</button>
+    <button onclick="filterProjects('react')">React</button>
+    <!-- Add more categories as needed -->
+</div>
+<section id="timeline" class="timeline">
+    <h2>Achievements & Certifications</h2>
+    <div class="timeline-container">
+        <div class="timeline-item">
+            <h3>2024 - CCBP Nxt Wave Certification</h3>
+            <p>Earned the CCBP Nxt Wave Certification, specializing in front-end development.</p>
+        </div>
+        <!-- Add more timeline items -->
+    </div>
+</section>
+<section class="resume-section">
+    <h2>Want to Learn More?</h2>
+    <p>Download my resume for a comprehensive look at my work.</p>
+    <a href="path/to/resume.pdf" download="Srikar_Resume.pdf" class="download-btn">Download Resume</a>
+</section>
+<section id="blog" class="blog">
+    <h2>My Articles</h2>
+    <div class="blog-list">
+        <div class="blog-post">
+            <h3>Understanding Flexbox in CSS</h3>
+            <p>A beginner-friendly guide to mastering Flexbox.</p>
+            <a href="link-to-article" target="_blank">Read More</a>
+        </div>
+        <!-- Add more blog posts as needed -->
+    </div>
+</section>
+
+
+
+            <!-- Add more project items here -->
+        </div>
+    </section>
+    <div id="lightbox-modal" class="lightbox-modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="lightbox-img">
+    </div>
+    <section id="testimonials" class="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <p>"Srikar’s work ethic and passion for web development are unmatched. Truly a young talent!"</p>
+                <h4>- John Doe, Mentor</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Great attention to detail and a pleasure to work with on our website project!"</p>
+                <h4>- Jane Smith, Client</h4>
+            </div>
+            <!-- Add more testimonials as needed -->
+        </div>
+    </section>
+    <section id="testimonials" class="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <p>"Srikar’s work ethic and passion for web development are unmatched. Truly a young talent!"</p>
+                <h4>- John Doe, Mentor</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Great attention to detail and a pleasure to work with on our website project!"</p>
+                <h4>- Jane Smith, Client</h4>
+            </div>
+            <!-- Add more testimonials as needed -->
+        </div>
+    </section>
+    <button id="dark-mode-toggle" class="dark-mode-toggle">Toggle Dark Mode</button>
+    <section class="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial-carousel">
+            <div class="testimonial">
+                <p>"Srikar's work is fantastic! Highly recommended."</p>
+                <h4>- gopal</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Very professional and attentive to detail. Would work with again!"</p>
+                <h4>- saraswathi</h4>
+            </div>
+            <!-- Add more testimonials as needed -->
+        </div>
+    </section>
+    
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+        <div class="social-links">
+            <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Srikar. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Animations and Modals -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+   
